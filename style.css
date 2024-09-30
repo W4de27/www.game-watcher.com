@@ -1,0 +1,566 @@
+@font-face {
+    font-family: 'text';
+    src: url(fonts/Noto_Serif/NotoSerif-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgba(128, 128, 128, 0.638);
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 100;
+}
+header .logo img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    margin-top: -210px;
+}
+
+header .box {
+    background-color: beige;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-right: 60px;
+    border-radius: 5px;
+}
+header .box input {
+    width: 85%;
+    height: 100%;
+    padding: 3px 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    color: saddlebrown;
+    color: black;
+}
+header .box button {
+    width: 15%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.729);
+    color: beige;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+header .box button i {
+    color: beige;
+    font-size: 1.1rem;
+}
+
+
+/* ################# section ################## */
+.hide {
+    width: 100%;
+    height: 70px;
+}
+
+section {
+    padding: 60px 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap:40px;
+}
+section .card {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+section .card:hover .img img {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+}
+section .card .img {
+    width: 100%;
+    height: 350px;
+}
+section .card .img img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+section .card h1 {
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 7px;
+    font-family: text;
+}
+section .card .rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+section .card .rate .stars i {
+    color: gold;
+    font-size: 1rem;
+}
+section .card .rate span {
+    color: black;
+    font-size: 1.1rem;
+    font-family: text;
+}
+
+section .card button {
+    width: 100%;
+    height: 40px;
+    background-color: saddlebrown;
+    color: beige;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    transition: all 0.2s ease-out;
+    font-family: text;
+}
+section .card button:hover {
+    background-color: rgb(142, 92, 56);
+}
+
+
+
+article {
+    padding: 60px 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+article .card {
+    position: relative;
+    background-color: beige;
+    width: 100%;
+    height: auto;
+}
+article .card:hover .img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+article .card .img {
+    width: 100%;
+    height: 350px;
+}
+
+article .card .img img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+article .card h1 {
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 7px;
+    font-family: text;
+}
+
+article .card .rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+article .card .rate .stars i {
+    color: gold;
+    font-size: 1rem;
+}
+
+article .card .rate span {
+    color: black;
+    font-size: 1.1rem;
+    font-family: text;
+}
+
+article .card button {
+    width: 100%;
+    height: 40px;
+    background-color: saddlebrown;
+    color: beige;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    transition: all 0.2s ease-out;
+    font-family: text;
+}
+
+article .card button:hover {
+    background-color: rgb(142, 92, 56);
+}
+
+
+
+main {
+    padding: 60px 40px;
+    width: 100%;
+    height: auto;
+    display: none;
+    justify-content: space-evenly;
+    gap: 40px;
+
+}
+
+main .card {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+main .card:hover .img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+main .card .img {
+    width: 100%;
+    height: 350px;
+}
+
+main .card .img img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+main .card h1 {
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 7px;
+    font-family: text;
+}
+
+main .card .rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+main .card .rate .stars i {
+    color: gold;
+    font-size: 1rem;
+}
+
+main .card .rate span {
+    color: black;
+    font-size: 1.1rem;
+    font-family: text;
+}
+
+main .card button {
+    width: 100%;
+    height: 40px;
+    background-color: saddlebrown;
+    color: beige;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    transition: all 0.2s ease-out;
+    font-family: text;
+}
+
+main .card button:hover {
+    background-color: rgb(142, 92, 56);
+}
+
+
+
+aside {
+    padding: 60px 40px;
+    width: 100%;
+    height: auto;
+    display: none;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+aside .card {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+aside .card:hover .img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+aside .card .img {
+    width: 100%;
+    height: 350px;
+}
+
+aside .card .img img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+aside .card h1 {
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 7px;
+    font-family: text;
+}
+
+aside .card .rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+aside .card .rate .stars i {
+    color: gold;
+    font-size: 1rem;
+}
+
+aside .card .rate span {
+    color: black;
+    font-size: 1.1rem;
+    font-family: text;
+}
+
+aside .card button {
+    width: 100%;
+    height: 40px;
+    background-color: saddlebrown;
+    color: beige;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    transition: all 0.2s ease-out;
+    font-family: text;
+}
+
+aside .card button:hover {
+    background-color: rgb(142, 92, 56);
+}
+
+
+.button .btn {
+    background-color: white;
+    margin-left: 40px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.3rem;
+    color: saddlebrown;
+    font-family: sans-serif;
+    border: 2px solid saddlebrown;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s ;
+}
+.button .btn:hover {
+    background-color: saddlebrown;
+    color: wheat;
+    border: 2px solid beige;
+}
+
+.pages {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.pages .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pages .links .num {
+    color: wheat;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: text;
+    background-color: rgb(96, 96, 96);
+    padding: 5px 15px;
+    transition: all 0.3s;
+}
+.pages .links .num:hover {
+background-color: rgb(142, 92, 56);
+}
+.pages .links .check {
+    background-color: saddlebrown;
+    color: beige;
+}
+.pages .links .next {
+    background-color: rgb(96, 96, 96);
+    color: wheat;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: text;
+    padding: 5px 15px;
+    transition: all 0.3s;
+}
+.pages .links .next:hover {
+    background-color: rgb(142, 92, 56);
+}
+
+
+footer {
+    width: 100%;
+    height: 500px;
+    margin-top: 45px;
+    background: url(imgs-P4/footer10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+footer .opacity {
+    background-color: rgba(0, 0, 0, 0.378);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+footer .opacity .text {
+    width: 55%;
+    height: 100%;
+    padding: 20px 30px;
+}
+footer .opacity .text .img {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .opacity .text .img img {
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+}
+footer .opacity .text .box {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .opacity .text .box ul li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+footer .opacity .text .box ul li a {
+    text-decoration: none;
+    font-family: text;
+    color: beige;
+    font-size: 1.0rem;
+    transition: all 0.3s ease;
+}
+footer .opacity .text .box ul li a:hover {
+    color: rgb(196, 130, 83)
+}
+footer .opacity .text .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    height: auto;
+}
+footer .opacity .text .links a {
+    text-decoration: none;
+}
+footer .opacity .text .links a i {
+    color: beige;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.563);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+footer .opacity .text .links a .fa-facebook-f:hover {
+    background-color: blue;
+    color: beige;
+    box-shadow: 0 0 30px blue;
+}
+footer .opacity .text .links a .fa-youtube:hover {
+    background-color: beige;
+    color: red;
+    box-shadow: 0 0 30px red;
+}
+footer .opacity .text .links a .fa-google:hover {
+    background-color: beige;
+    color: black;
+    box-shadow: 0 0 30px beige;
+}
+footer .opacity .text .links a .fa-linkedin-in:hover {
+    background-color: rgb(42, 42, 251);
+    color: beige;
+    box-shadow: 0 0 30px rgb(42, 42, 251);
+}
+footer .opacity .text .links a .fa-github:hover {
+    background-color: black;
+    color: beige;
+    box-shadow: 0 0 30px black;
+}
+
+footer .opacity .text p {
+    color: rgb(164, 162, 162);
+    text-align: center;
+    margin-top: 25px;
+    font-family: text;
+}
